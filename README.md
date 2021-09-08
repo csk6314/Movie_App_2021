@@ -1,6 +1,3 @@
 # Movie app 2021
 
-React Practice good
-
-this is real good Game. 
-How can change if we merge?
+React and Github Practice to do this.
