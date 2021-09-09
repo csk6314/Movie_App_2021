@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const myChampionList = [{id:1,name :"리 신",image:"https://ww.namu.la/s/96d63f1c7aae8d3362cc73bc71d8e61e2fca89729828fe754218a102adf3800230f3fa5b3df6a04d4e102db04655be4d0f2eb2975cc1e9aec7529af58aeb58e46592af44cc85cea9e676d5ccd33374a4f9c3a31eb27bff9b66b20714cc86572b"
 },{id:2,name:"엘리스",image:"https://w.namu.la/s/66c71754476c436b8e36fd38ce44c778157b20b3107fd380b5c4f3f58409690d369a36157ea5ebeb63d5523fd9234a51bb6c72a5f681ddb8f4699ea2b2efaa933d4ca201f8d548c36bada5114bd398ad8da19d9da433a1aa7c17e4f69fb58dc4"}
@@ -13,7 +14,10 @@ function Champion({name,image}) {
     </div>
   );
 }
-
+Champion.propTypes = {
+name:PropTypes.string.isRequired,
+image:PropTypes.string.isRequired,
+};
 function App() {
   return (
     <div className="App">
