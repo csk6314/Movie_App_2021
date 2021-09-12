@@ -1,4 +1,7 @@
-
+.movies a {
+    display: contents;
+    text-decoration: none;
+}
 .movies {
    
     display:flex;
@@ -6,10 +9,11 @@
     flex-wrap: wrap;
     padding:50px;
     width: 80%;
-    padding-top: 70px;
+    padding : 70px 0px;
 }
 .movies .movie {
     width:45%;
+    min-width: 370px;
     background-color: white;
     border-radius: 5px;
     margin-bottom: 70px;
@@ -52,15 +56,11 @@
 margin-right: 10px;
 font-size: 14px;
 }
-@media screen and (max-width:1020px) {
+
+@media screen and (max-width:1050px) {
     .movie .movie__genres,
     .movie .movie__summary{
-        display:none;
-    }
-}
-@media screen and (max-width:700px) {
-    .movie .movie__title,
-    .movie .movie__year{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
