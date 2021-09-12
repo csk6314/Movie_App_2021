@@ -1,3 +1,3 @@
 # Movie app 2021
 
-React and Github Practice to do this.
+Moive App which was made in React.
